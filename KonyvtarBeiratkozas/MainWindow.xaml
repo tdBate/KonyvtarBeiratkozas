@@ -1,0 +1,30 @@
+﻿<Window x:Class="KonyvtarBeiratkozas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KonyvtarBeiratkozas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="20">
+            <Label Content="Név:"/>
+            <TextBox x:Name="tbNev"></TextBox>
+
+            <Label Content="Kor:"/>
+            <TextBox x:Name="tbKor"></TextBox>
+            <Label Content="Kedvenc műfaj:"/>
+            <ComboBox x:Name="cmbMufaj"></ComboBox>
+
+            <Label></Label>
+            
+            <CheckBox x:Name="cbHirlevel" Content="Hírlevél feliratkozás"/>
+            <CheckBox x:Name="cbSms" Content="Sms feliratkozás"/>
+
+            <RadioButton></RadioButton>
+            
+
+        </StackPanel>
+
+    </Grid>
+</Window>
