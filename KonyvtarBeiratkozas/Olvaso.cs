@@ -24,9 +24,15 @@ namespace KonyvtarBeiratkozas
             this.tagsagiTipus = tagsagiTipus;
         }
 
+        public string Nev { get => nev; set => nev = value; }
+        public int Kor { get => kor; set => kor = value; }
+        public string Mufaj { get => mufaj; set => mufaj = value; }
+        public List<string> Ertesitesek { get => ertesitesek; set => ertesitesek = value; }
+        public string TagsagiTipus { get => tagsagiTipus; set => tagsagiTipus = value; }
+
         public void KiirFajlba()
         { 
-            string text = nev + ";" + kor + ";" + mufaj + ";" + string.Join(",", ertesitesek) + ";" + tagsagiTipus+"\n";
+            string text = nev + ";" + kor + ";" + mufaj + ";" + string.Join(",", ertesitesek) + ";" + tagsagiTipus+" \n";
             File.AppendAllText("olvasok.txt", text);
         }
     }

@@ -28,7 +28,9 @@
 
             <Button x:Name="btnKuldes" Content="Mentés" Click="btnKuldes_Click"></Button>
             <TextBlock x:Name="tbEredmeny" Text=""></TextBlock>
-            
+
+            <ListBox x:Name="lbTagok"></ListBox>
+
         </StackPanel>
 
     </Grid>
