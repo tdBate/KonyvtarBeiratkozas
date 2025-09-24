@@ -12,7 +12,7 @@
             <TextBox x:Name="tbNev"></TextBox>
 
             <Label Content="Kor:"/>
-            <TextBox x:Name="tbKor"></TextBox>
+            <TextBox x:Name="tbKor"/>
             <Label Content="Kedvenc műfaj:"/>
             <ComboBox x:Name="cmbMufaj"></ComboBox>
 
@@ -21,9 +21,12 @@
             <CheckBox x:Name="cbHirlevel" Content="Hírlevél feliratkozás"/>
             <CheckBox x:Name="cbSms" Content="Sms feliratkozás"/>
 
-            <RadioButton></RadioButton>
-            
+            <Label Content="Tagsági típus:"/>
+            <RadioButton GroupName="tipus" Content="Normál" x:Name="rbNormal"></RadioButton>
+            <RadioButton GroupName="tipus" Content="Diák" x:Name="rbDiak"></RadioButton>
+            <RadioButton GroupName="tipus" Content="Nyugdíjas" x:Name="rbNyugdijas"></RadioButton>
 
+            <Button x:Name="btnKuldes" Content="Mentés" Click="btnKuldes_Click"></Button>
         </StackPanel>
 
     </Grid>

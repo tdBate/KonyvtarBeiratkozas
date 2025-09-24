@@ -22,5 +22,10 @@ namespace KonyvtarBeiratkozas
             InitializeComponent();
             cmbMufaj.ItemsSource = mufajok;
         }
+
+        private void btnKuldes_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
