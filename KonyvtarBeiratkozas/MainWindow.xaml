@@ -12,7 +12,7 @@
             <TextBox x:Name="tbNev"></TextBox>
 
             <Label Content="Kor:"/>
-            <TextBox x:Name="tbKor"/>
+            <TextBox x:Name="tbKor" TextChanged="tbKor_TextChanged"/>
             <Label Content="Kedvenc műfaj:"/>
             <ComboBox x:Name="cmbMufaj"></ComboBox>
 
@@ -27,6 +27,8 @@
             <RadioButton GroupName="tipus" Content="Nyugdíjas" x:Name="rbNyugdijas"></RadioButton>
 
             <Button x:Name="btnKuldes" Content="Mentés" Click="btnKuldes_Click"></Button>
+            <TextBlock x:Name="tbEredmeny" Text=""></TextBlock>
+            
         </StackPanel>
 
     </Grid>

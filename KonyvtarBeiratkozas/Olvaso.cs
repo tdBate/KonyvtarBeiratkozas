@@ -26,7 +26,7 @@ namespace KonyvtarBeiratkozas
 
         public void KiirFajlba()
         { 
-            string text = nev + ";" + kor + ";" + mufaj + ";" + string.Join(",", ertesitesek) + ";" + tagsagiTipus;
+            string text = nev + ";" + kor + ";" + mufaj + ";" + string.Join(",", ertesitesek) + ";" + tagsagiTipus+"\n";
             File.AppendAllText("olvasok.txt", text);
         }
     }
